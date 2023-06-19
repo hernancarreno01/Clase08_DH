@@ -1,0 +1,17 @@
+function reporteDePasajeros(num_estaciones) {
+  var pasajeros = 200
+  var reporte = [ ]
+
+
+  for (var i = 0; i <= num_estaciones; i++) {
+    if (i===5){
+      pasajeros = pasajeros + 120 - 80
+    }
+    else if (i!==0){
+      pasajeros = pasajeros + 50 - 30;
+}
+reporte.push ('En la estación ' + i + ' hay ' + pasajeros + ' pasajeros arriba del tren')
+  }
+  return reporte;
+
+}
